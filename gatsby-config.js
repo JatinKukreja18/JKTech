@@ -4,7 +4,7 @@ module.exports = {
     title: "JKTech",
   },
   plugins: [
-    "gatsby-plugin-sass",
+    
     "gatsby-plugin-react-helmet",
     "gatsby-transformer-remark",
     {
@@ -15,5 +15,16 @@ module.exports = {
       },
       __key: "pages",
     },
+    {
+      resolve: 'gatsby-plugin-sass',
+      options: {
+        cssLoaderOptions: {
+          esModule: false,
+          modules: {
+            // namedExport: false,
+          },
+        }
+      }
+    }
   ],
 };

@@ -1,0 +1,49 @@
+.ProjectCard{
+    padding-top: 130.24%;
+    position: relative;
+    // overflow: hidden;
+    .ProjectCardContent{
+        border-radius: 8px;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        background-color: var(--bg-secondary-color);
+        box-shadow: 3px 3px 10px 1px rgba(0,0,0,.16);
+        transition: .3s;
+        a{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+            text-decoration: none;
+            color: var(--primary-color);
+            &:hover{
+                .ProjectTitle,.ProjectType{
+                    color: var(--primary-color);
+                }
+            }
+        }
+        &:hover{
+            transform: translateY(-3px);
+        }
+        .ProjectTitle{
+            padding: 20px;
+            text-align: center;
+            color: var(--secondary-color);
+        }
+        .ProjectType{
+            padding: 20px;
+            text-align: center;
+            color: var(--secondary-color);
+            position: absolute;
+            bottom: 0px;
+            width: 100%;
+        }
+        .ProjectImage{
+            width: 100%;
+            margin: auto;
+        }
+    }
+}

@@ -1,0 +1,13 @@
+.ThemeSelect{
+    width: 100%;
+    text-align: right;
+
+    svg{
+        cursor: pointer;
+        height: 21px;
+        color: var(--secondary-color);
+        &:hover{
+            color: var(--primary-color);
+        }
+    }
+}
