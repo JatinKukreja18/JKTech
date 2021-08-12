@@ -6,9 +6,9 @@ import "./ProjectCards.scss";
 function ProjectCards(props) {
     return (
         <div className={'ProjectCards '}>
-            {projects.map(project => {
+            {projects.map((project,index) => {
                 return (
-                <div className="col-md-6">
+                <div className="col-md-6" key={'project' + index}>
                     <ProjectCard project={project}/>
                 </div>
                 )
