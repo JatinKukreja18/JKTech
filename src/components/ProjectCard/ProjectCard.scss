@@ -1,6 +1,7 @@
 .ProjectCard{
     padding-top: 130.24%;
     position: relative;
+    min-width: 22vw;
     // overflow: hidden;
     .ProjectCardContent{
         border-radius: 8px;
@@ -12,10 +13,10 @@
         box-shadow: 3px 3px 10px 1px rgba(0,0,0,.16);
         transition: .3s;
         a{
-            display: flex;
+            display: inline-flex;
             flex-direction: column;
             width: 100%;
-            height: 100%;
+            height: auto;
             cursor: pointer;
             text-decoration: none;
             color: var(--primary-color);
@@ -46,4 +47,11 @@
             margin: auto;
         }
     }
+}
+
+@media screen and (max-width: 767px) {
+    .ProjectCard{
+        min-width: 40vw;
+    }
+    
 }

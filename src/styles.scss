@@ -90,6 +90,7 @@ body{
         transition: .3s;
         padding: 60px 0;
         overflow-x: hidden;
+        overflow-y: hidden;
     .HomeContainer{
         align-items: center;
         display: flex;
@@ -164,4 +165,10 @@ body{
         transform: rotate(90deg);
         transform-origin: 13px 13px;
     }
+}
+@media screen and (max-width: 767px) {
+    .Home{
+        overflow-y: auto;
+    }
+    
 }

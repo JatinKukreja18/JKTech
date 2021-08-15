@@ -4,3 +4,4 @@ export { default as Linkedin } from './linkedin.svg';
 export { default as Injiri } from './injiri.png';
 export { default as Marriott } from './marriott.png';
 export { default as PranoySarkar } from './pranoysarkar.png';
+export { default as Islasridge } from './islasridge.png';
