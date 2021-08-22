@@ -232,6 +232,9 @@
               &:first-of-type{
                 margin-left: calc(-250px + 10px);
               }
+              .ProjectCard .ProjectCardContent a .ProjectTitle, .ProjectCard .ProjectCardContent a .ProjectType{
+                color: var(--primary-color);
+              }
               @keyframes slide-in {
                 0% {
                   margin-left: 0;
