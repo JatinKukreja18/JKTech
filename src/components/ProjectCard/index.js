@@ -2,8 +2,12 @@ import React from 'react';
 import "./ProjectCard.scss";
 
 function ProjectCard({project}) {
+    
     return (
-            <div className="ProjectCard" key={project.id}>
+            <div 
+                className="ProjectCard" 
+                key={project.id}                 
+                >
                 <div className="ProjectCardContent">
                     <a
                         className={''}

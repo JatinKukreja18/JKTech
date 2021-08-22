@@ -11,3 +11,12 @@
         }
     }
 }
+@media screen and (max-width: 767px) {
+    .ThemeSelect{
+        display: inline-block;
+        width: auto;
+        position: absolute;
+        top: 30px;
+        right: 30px;
+    }
+}

@@ -167,8 +167,73 @@ body{
     }
 }
 @media screen and (max-width: 767px) {
+    h1{
+        font-size: 18px;
+    }
     .Home{
         overflow-y: auto;
+        padding: 60px 0 50px 0;
+        .HomeContainer{
+            display: block;
+            .row{
+                min-height: 100%;
+            }
+        }
     }
-    
+    .Bio{
+        text-align: center;
+        img{
+            width: 40px;
+            margin-right: 10px;
+        }
+        h1{
+            flex: 1;
+            display: none;
+        }
+        p{
+            max-width: 220px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .BioHeader{
+            display:inline-block;
+            margin-bottom: 30px;
+        }
+        .Name{
+            span{
+                color: var(--secondary-color);
+            }
+        }
+        .SocialLinks{
+            display: inline-flex;
+            margin-bottom: 30px;
+            li{
+                margin-right: 10px;
+            }
+            a{
+                cursor: pointer;
+                transition: .5s;
+            }
+            a,a:visited{
+                color: var(--secondary-color);
+            }
+            svg{
+                width: 20px;
+            }
+            a:hover{
+                color: var(--primary-color);
+            }
+        }
+    }
+    .chat-text{
+        margin-bottom: 10px;
+    }
+    .chat-link{
+        margin-bottom: 30px;
+    }
+}
+@media screen and (orientation:landscape) and (min-width:767px) {
+    .Home{
+        min-height: 540px;
+    }
 }

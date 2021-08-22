@@ -22,14 +22,14 @@ const IndexPage = () => {
                     <img src={Avatar} alt="JK Avatar"/>
                     <div className="Name">
                       <h1> Jatin Kukreja</h1>  
-                      <p className="text secondary">@jaykay.tech</p>
+                      <p className="text secondary handle">@jaykay.tech</p>
                     </div>
                   </div>
 
                   <h1 className="mb15">
                     Bio
                   </h1>
-                  <p className={'text secondary mb30'}>
+                  <p className={'text secondary mb30 biotext'}>
                     I code beautiful designs into functional masterpieces.
                   </p>
                   <ul className="SocialLinks">
@@ -57,10 +57,10 @@ const IndexPage = () => {
                       </a>
                     </li>
                   </ul>
-                  <p  className={'text secondary mb10'}>
+                  <p  className={'text secondary mb10 chat-text'}>
                     Fancy a quick chat?
                   </p>
-                  <a className="text link has-icon mb60" href="https://calendly.com/jatinkukreja-connect/15min" target="_blank">
+                  <a className="text link has-icon mb60 chat-link" href="https://calendly.com/jatinkukreja-connect/15min" target="_blank">
                     Book a meeting
                     <svg xmlns="http://www.w3.org/2000/svg" width="14.207" height="14.207" viewBox="0 0 14.207 14.207">
                       <g id="Icon_feather-external-link" data-name="Icon feather-external-link" transform="translate(-4 -3.793)">

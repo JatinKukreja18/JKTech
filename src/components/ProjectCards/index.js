@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import ProjectCard from '../ProjectCard';
 import projects from "./links";
 import "./ProjectCards.scss";
-
+import Carousel from 'react-multi-carousel';
 
 
 const DIRECTIONS = {
@@ -29,10 +29,27 @@ function ProjectCards(props) {
         setCurrentCard(newCardNumber);
         setDirection(DIRECTIONS.RIGHT);
     }
-    
-    return (
-        <>
-        <div className={'ProjectCards carousel-item-container'}>
+    var touchedStartedAt = 0;
+    const handleTouchStart = (e)=>{
+      console.log(e.changedTouches[0].clientX);
+      touchedStartedAt = e.changedTouches[0].clientX;
+    }
+    const handleTouchEnd = (e)=>{
+        console.log(e.changedTouches[0].clientX);
+        if(touchedStartedAt > e.changedTouches[0].clientX){
+          onNextClickHandler();
+          setDirection(DIRECTIONS.RIGHT)
+        }else{
+          onPrevClickHandler();
+          setDirection(DIRECTIONS.LEFT)
+        }
+    }
+    const desktopView = (
+      <>
+       <div className={'ProjectCards carousel-item-container'} 
+            onTouchStart={handleTouchStart}
+            onTouchEnd={handleTouchEnd}
+            >
             {projects.map((project,index) => {
                 let classes = '';
                 if (index === currentCard) {
@@ -76,6 +93,26 @@ function ProjectCards(props) {
             </div>
         </div>
         </>
+    )
+    const mobileView = (
+      <>
+        <Carousel>
+          
+        </Carousel>
+      </>
+    )
+    return (
+       <>
+        {/* {
+          window.innerWidth > 767?
+            desktopView
+            :
+            mobileView
+        } */
+        desktopView
+        }
+       </>
+        
     );
 }
 

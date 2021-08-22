@@ -1,4 +1,4 @@
-import {Injiri,PranoySarkar, Marriott,Islasridge} from "../../images";
+import {Injiri,PranoySarkar, Marriott,Islasridge,CM} from "../../images";
 const projects = [
     {
       title: "I N J I R I",
@@ -21,13 +21,13 @@ const projects = [
       color: "#BC027F",
       img: Marriott
     },
-    // {
-    //   title: "ClubMarriott Website",
-    //   url: "https://www.clubmarriott.in/",
-    //   description:"Website",
-    //   color: "#0D96F2",
-    //   img: Marriott
-    // },
+    {
+      title: "ClubMarriott Website",
+      url: "https://www.clubmarriott.in/",
+      description:"Website",
+      color: "#0D96F2",
+      img: CM
+    },
     {
       title: "Isla's Ridge",
       url: "https://islasridge.com/",
@@ -35,13 +35,5 @@ const projects = [
       color: "#8EB814",
       img: Islasridge
     },
-    // {
-    //   title: "Build and Host",
-    //   url: "https://www.gatsbyjs.com/cloud",
-    //   badge: true,
-    //   description:"Website",
-    //   color: "#663399",
-    //   img: Injiri
-    // },
   ]
 export default projects;

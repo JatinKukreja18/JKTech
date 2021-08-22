@@ -19,6 +19,7 @@
             height: auto;
             cursor: pointer;
             text-decoration: none;
+            height: calc(100% - 57px);
             color: var(--primary-color);
             &:hover{
                 .ProjectTitle,.ProjectType{
@@ -51,7 +52,7 @@
 
 @media screen and (max-width: 767px) {
     .ProjectCard{
-        min-width: 40vw;
+        min-width: 250px;
     }
     
 }

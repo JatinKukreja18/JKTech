@@ -1,6 +1,6 @@
 .container{
-  padding-left: 90px;
-  padding-right: 90px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 .row {
     display: flex;
@@ -194,7 +194,10 @@
     }
   }
   @media (min-width: 768px) {
-    
+    .container{
+      padding-left: 40px;
+      padding-right: 40px;
+    }
     .col-md {
       flex-basis: 0;
       flex-grow: 1;
@@ -289,6 +292,10 @@
   }
   
   @media (min-width: 992px) {
+    .container{
+      padding-left: 90px;
+      padding-right: 90px;
+    }
     .col-lg {
       flex-basis: 0;
       flex-grow: 1;
