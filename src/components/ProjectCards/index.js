@@ -36,12 +36,14 @@ function ProjectCards(props) {
     }
     const handleTouchEnd = (e)=>{
         console.log(e.changedTouches[0].clientX);
-        if(touchedStartedAt > e.changedTouches[0].clientX){
-          onNextClickHandler();
-          setDirection(DIRECTIONS.RIGHT)
-        }else{
-          onPrevClickHandler();
-          setDirection(DIRECTIONS.LEFT)
+        if(Math.abs(touchedStartedAt - e.changedTouches[0].clientX) > 99){
+          if(touchedStartedAt > e.changedTouches[0].clientX){
+            onNextClickHandler();
+            setDirection(DIRECTIONS.RIGHT)
+          }else{
+            onPrevClickHandler();
+            setDirection(DIRECTIONS.LEFT)
+          }
         }
     }
     const desktopView = (
