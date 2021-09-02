@@ -1,3 +1,7 @@
+.carousel-item.active .ProjectCard .ProjectCardContent a .ProjectTitle, 
+.carousel-item.active .ProjectCard .ProjectCardContent a .ProjectType{
+    color: var(--primary-color);
+}
 .ProjectCard{
     padding-top: 130.24%;
     position: relative;

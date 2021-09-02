@@ -23,6 +23,7 @@
 
         &.new {
         //   pointer-events: none;
+          z-index: 2;
           .am-card {
             .am-card-content {
               .list {
@@ -90,7 +91,7 @@
         &.left {
           &.new {
             transform: scale(1);
-            opacity: 0.8;
+            opacity: 1;
             z-index: 2;
             // animation: left-slide-out .5s ease-in-out;
             
@@ -102,7 +103,7 @@
               }
   
               100% {
-                opacity: 0.8;
+                opacity: 1;
                 transform: scale(1);
                 margin-left: 0;
               }
@@ -194,8 +195,9 @@
 
 @media screen and (max-width: 767px) {
     .arrow-buttons-container{
-      margin-top: 30px;
-      display: none;
+      margin-top: 40px;
+      width: calc(100vw - 70px);
+      justify-content: space-between;
     }
     .carousel-item-container{
       display: flex;
@@ -278,7 +280,7 @@
           &.left {
             &.new {
               transform: scale(1);
-              opacity: 0.8;
+              opacity: 1;
               z-index: 2;
               // animation: left-slide-out .5s ease-in-out;
               
@@ -290,7 +292,7 @@
                 }
     
                 100% {
-                  opacity: 0.8;
+                  opacity: 1;
                   transform: scale(1);
                   margin-left: 0;
                 }
