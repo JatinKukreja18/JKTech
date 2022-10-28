@@ -1,6 +1,18 @@
-import {Injiri,PranoySarkar, Marriott,Islasridge,CM} from "../../images";
+import {Feat,RawMango,Injiri,PranoySarkar, Marriott,Islasridge,CM} from "../../images";
 const projects = [
     {
+      title: "Feat Artists",
+      url: "https://feat-artists.com/",
+      description:"Agency Website",
+      color: "#E95800",
+      img: Feat
+    },{
+      title: "Others by Raw Mango",
+      url: "https://jatinkukreja18.github.io/RawMangoCampaign/",
+      description:"Campaign Page",
+      color: "#E95800",
+      img: RawMango
+    },{
       title: "I N J I R I",
       url: "https://www.injiri.co.in",
       description:"Fashion Brand Website",

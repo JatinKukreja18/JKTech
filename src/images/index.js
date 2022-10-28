@@ -5,4 +5,6 @@ export { default as Injiri } from './injiri.png';
 export { default as Marriott } from './marriott.png';
 export { default as PranoySarkar } from './pranoysarkar.png';
 export { default as Islasridge } from './islasridge.png';
+export { default as RawMango } from './rawmango.png';
+export { default as Feat } from './feat.png';
 export { default as CM } from './cm.png';
