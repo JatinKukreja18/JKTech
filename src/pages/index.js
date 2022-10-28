@@ -46,7 +46,7 @@ const IndexPage = () => {
                       </a>
                     </li>
                     <li>
-                      <a target="_blank" href="https://www.linkedin.com/">
+                      <a target="_blank" href="https://in.linkedin.com/in/jatin-kukreja-13632a7b">
                         <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="-1 -1 23 23">
                           <g id="Icon_feather-linkedin" data-name="Icon feather-linkedin" transform="translate(-2.5 -2.5)">
                             <path id="Path_53" data-name="Path 53" d="M21,12a6,6,0,0,1,6,6v7H23V18a2,2,0,0,0-4,0v7H15V18a6,6,0,0,1,6-6Z" transform="translate(-4 -3)" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2"/>
@@ -56,11 +56,19 @@ const IndexPage = () => {
                         </svg>
                       </a>
                     </li>
+                    <li>
+                      <a target="_blank" href="http://github.com/jatinkukreja18">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="20" viewBox="-1 -1 24 22">
+                          <path id="Icon_feather-github" data-name="Icon feather-github" d="M9.658,18.606C4.9,20.033,4.9,16.228,3,15.753M16.316,21.46V17.779a3.205,3.205,0,0,0-.894-2.483c2.987-.333,6.126-1.465,6.126-6.658a5.174,5.174,0,0,0-1.426-3.566,4.822,4.822,0,0,0-.086-3.587s-1.122-.333-3.719,1.408a12.727,12.727,0,0,0-6.658,0c-2.6-1.741-3.719-1.408-3.719-1.408a4.822,4.822,0,0,0-.086,3.586,5.174,5.174,0,0,0-1.427,3.6c0,5.155,3.139,6.287,6.126,6.658a3.205,3.205,0,0,0-.894,2.454V21.46" transform="translate(-2.394 -0.936)" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                        </svg>
+
+                      </a>
+                    </li>
                   </ul>
                   <p  className={'text secondary mb10 chat-text'}>
                     Fancy a quick chat?
                   </p>
-                  <a className="text link has-icon mb60 chat-link" href="https://calendly.com/jatinkukreja-connect/15min" target="_blank">
+                  <a className="text link has-icon mb60 chat-link" href="https://calendly.com/jatinkukreja-connect/30min" target="_blank">
                     Book a meeting
                     <svg xmlns="http://www.w3.org/2000/svg" width="14.207" height="14.207" viewBox="0 0 14.207 14.207">
                       <g id="Icon_feather-external-link" data-name="Icon feather-external-link" transform="translate(-4 -3.793)">
