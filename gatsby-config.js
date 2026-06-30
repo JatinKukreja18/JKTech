@@ -4,7 +4,7 @@ module.exports = {
     title: "JKTech",
   },
   plugins: [
-    
+
     "gatsby-plugin-react-helmet",
     "gatsby-transformer-remark",
     {
@@ -27,4 +27,5 @@ module.exports = {
       }
     }
   ],
+  pathPrefix: "/JKTech",
 };
