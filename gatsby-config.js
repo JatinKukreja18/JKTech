@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
+    siteUrl: "https://jatinkukreja18.github.io/JKTech",
     title: "JKTech",
   },
   plugins: [
